@@ -1,4 +1,5 @@
 import React from 'react';
+import './Cart.css';
 
 const Cart = (props) => {
     const cart = props.cart;
@@ -12,15 +13,17 @@ const Cart = (props) => {
     const grandTotal = (Number(total)).toFixed(2);
 
     return (
-        <div>
-            <h4>Order Summary</h4>
-            <p>Course Ordered: {cart.length}</p>
-            <p>Course Price: {(Number(total).toFixed(2))}</p>
-            <p>Total Price: {grandTotal}</p>
-            <br />
-            {
-                props.children
-            }
+        <div className="cart">
+            <div className="text">
+                <h4>Order Summary</h4>
+                <p>Course Ordered: {cart.length}</p>
+                <p>{cart.name}</p>
+                <p>Total Price: {grandTotal}$</p>
+                <br />
+                {
+                    props.children
+                }
+            </div>
         </div>
     );
 };

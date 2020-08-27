@@ -5,13 +5,15 @@
     margin-right: 10px;
     padding-bottom: 5px;
     box-shadow: 5px 1px 5px #aaaaaa;
-    background: linear-gradient(51deg, rgba(142,69,252,1) 0%, rgba(32,254,251,1) 51%, rgba(32,254,251,1) 100%);
+    background: linear-gradient(18deg, rgba(32,254,229,1) 4%, rgba(147,51,252,1) 93%, rgba(158,32,254,1) 100%);
     border-radius: 20px;
     color: whitesmoke;
 }
 
 .course-p {
     padding: 30px;
+       font-weight: 400;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .main-button {
     background-color: rgb(255, 186, 13);
