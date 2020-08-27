@@ -7,7 +7,7 @@ import Course from '../Courses/Course';
 const Header = () => {
     return (
         <div className="header">
-            <Navbar sticky="top" expand="lg">
+            <Navbar sticky="top" expand="lg"  className="navdes mb-5">
                 <Navbar.Brand href="#home"><img src={logo} alt=""/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

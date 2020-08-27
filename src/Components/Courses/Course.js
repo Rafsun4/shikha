@@ -9,7 +9,8 @@ const Course = () => {
     const first12 = Fakedata.slice(0,12);
     const [course, setCourse] = useState(first12);
 
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState([]);
+
     const handleAddCourse = (course) => {
         const newCart = [...cart, course];
         setCart(newCart);
